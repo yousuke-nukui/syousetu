@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SyousetuApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+          <div class="header-title">
+            <div class="header-logo">
+              <a href="/">タイトル</a>
+            </div>
+            <div class="header-login">
+              <a href="login">ログイン</a>
+            </div>
+          </div>
+          <div class="header-list">
+            <a href="howto">使い方</a>
+            <a href="recommend">おすすめ</a>
+            <a href="#">ジャンル</a>
+            <a href="signup">登録</a>
+            <a href="login">ログイン</a>
+          </div>
+    </header>
+    <%= yield %>
+    <footer>
+      <div class="footer-logo">Title</div>
+      <div class="footer-list">
+     <a href="#">利用規約</a>
+     <a href="#">プライバシーポリシー</a>
+     <a href="#">お問い合わせ</a>
+     <a href="#">公式Twitter</a>
+     <a href="#">ログアウト</a>
+      </div>
+    </footer>
+  </body>
+</html>
