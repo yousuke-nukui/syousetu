@@ -6,25 +6,25 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <!-- %= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>-->
+    <!--%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>-->
   </head>
 
   <body>
     <header>
           <div class="header-title">
             <div class="header-logo">
-              <a href="/">タイトル</a>
+              <%= link_to("タイトル", "/") %>
             </div>
             <div class="header-login">
-              <a href="/login">ログイン</a>
+              <%= link_to("ログイン", "login") %>
             </div>
           </div>
           <div class="header-list">
-            <a href="/howto">使い方</a>
-            <a href="/recommend">おすすめ</a>
-            <a href="posts/index">ジャンル</a>
-            <a href="/signup">登録</a>
-            <a href="/login">ログイン</a>
+            <%= link_to("使い方", "howto") %>
+            <%= link_to("おすすめ", "recommend") %>
+            <%= link_to("ジャンル", "genre") %>
+            <%= link_to("登録", "signup") %>
+            <%= link_to("ログイン", "login") %>
           </div>
     </header>
     <%= yield %>
