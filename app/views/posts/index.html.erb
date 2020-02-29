@@ -1,0 +1,23 @@
+
+<div class="main posts-index">
+  <div class="genre-header">
+    <p>ジャンル</p>
+  </div>
+  <div class="genre-body">
+    <ul>
+      <li><a href="#">SF</a></li>
+      <li><a href="#">歴史</a></li>
+      <li><a href="#">ミステリー</a></li>
+      <li><a href="#">恋愛</a></li>
+      <li><a href="#">SF</a></li>
+      <li><a href="#">SF</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <%= link_to(post.content,"/posts/#{post.id}") %>
+      </div>
+    <% end %>
+  </div>
+</div>
