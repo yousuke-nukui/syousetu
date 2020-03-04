@@ -1,0 +1,38 @@
+<body>
+  <main>
+    <div class="top-wrapper">
+      <h1>ユーザー登録（無料）</h1>
+    </div>
+    <div class="form-wrapper">
+      <% @user.errors.full_messages.each do |message| %>
+          <div class="form-error">
+            <%= message %>
+          </div>
+      <% end %>
+      <%= form_tag("/users/create") do %>
+      <div class="form-group">
+        <p>名前</p>
+        <input type="text" name="name" value="<%= @user.name %>">
+      </div>
+      <div class="form-group">
+        <p>メールアドレス</p>
+        <input type="email" name="email" value="<%= @user.email %>">
+      </div>
+      <div class="form-group">
+        <p>パスワード</p>
+        <input type="password" name="password" value="<%= @user.password %>">
+      </div>
+      <div class="form-group">
+        <p>パスワードの確認</p>
+        <input type="password" name="password-confirmation" value="">
+      </div>
+      <div class="userpolicy">
+        <a href="userpolicy.html">利用規約を確認する</a>
+      </div>
+      <div class="form-group">
+        <input class="form-signup" type="submit" name="commit" value="利用規約に同意して登録する">
+      </div>
+      <% end %>
+  </div>
+  </main>
+</body>
