@@ -22,6 +22,8 @@ Rails.application.routes.draw do
   get "posts/:id/edit" => "posts#edit"
   post "posts/:id/update" => "posts#update"
   post "posts/:id/destroy" => "posts#destroy"
+  get "posts/:id/overwrite" => "posts#overwrite"
+  post "posts/:id/create" => "posts#create"
 
   get '/' => 'home#top'
   get 'howto' => 'home#howto'
