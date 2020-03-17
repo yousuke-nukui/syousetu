@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SyousetuApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <% @current_user = User.find_by(id: session[:user_id]) %>
+      <% if @current_user %>
+          <div class="header-title">
+            <div class="header-logo">
+                <%= link_to("タイトル", "/") %>
+            </div>
+            <div class="header-login">
+              <%= link_to("ログアウト", "/logout", {method: :post}) %>
+            </div>
+          </div>
+          <div class="header-list">
+            <li>
+              <%= link_to("使い方", "/howto") %>
+            </li>
+            <li>
+              <%= link_to("検索", "/posts/search") %>
+            </li>
+            <li>
+              <%= link_to("投稿", "/write") %>
+            </li>
+            <li>
+              <%= link_to("マイページ", "/users/#{@current_user.id}") %>
+            </li>
+          </div>
+      <% else %>
+      <div class="header-title">
+        <div class="header-logo">
+          <%= link_to("タイトル", "/") %>
+        </div>
+        <div class="header-login">
+          <%= link_to("ログイン", "/login") %>
+        </div>
+      </div>
+      <div class="header-list">
+        <li>
+          <%= link_to("使い方", "/howto") %>
+        </li>
+        <li>
+          <%= link_to("検索", "/posts/search") %>
+        </li>
+        <li>
+          <%= link_to("投稿", "/write") %>
+        </li>
+        <li>
+          <%= link_to("マイページ", "signup") %>
+        </li>
+      </div>
+      <% end %>
+    </header>
+    <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    <%= yield %>
+    <footer>
+      <div class="footer-logo">Title</div>
+      <div class="footer-list">
+     <a href="#">利用規約</a>
+     <a href="#">プライバシーポリシー</a>
+     <a href="#">お問い合わせ</a>
+     <a href="#">公式Twitter</a>
+     <a href="#">ログアウト</a>
+      </div>
+    </footer>
+  </body>
+</html>

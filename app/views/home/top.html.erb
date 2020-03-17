@@ -1,0 +1,56 @@
+<body>
+  <main>
+
+      <!--イントロ-->
+      <div class="intro">
+        <h1>魔王</h1>
+        <p>はっはっはっは</p>
+        <p>ようこそ我が城へ</p>
+      </div>
+
+      <!--ジャンル別で探す-->
+      <div class="genre">
+        <div class="genre-header">
+          <p><%= link_to("カテゴリー", "/posts/search") %></p>
+        </div>
+        <div class="genre-body">
+          <ul>
+            <li><a href="#">恋愛</a></li>
+            <li><a href="#">社会・現代</a></li>
+            <li><a href="#">ミステリー</a></li>
+            <li><a href="#">ファンタジ</a></li>
+            <li><a href="#">文芸</a></li>
+            <li><a href="#">歴史・時代</a></li>
+            <li><a href="#">その他</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--おすすめ-->
+      <div class="pickup">
+        <div class="pickup-header">
+          <p>おすすめ</p>
+        </div>
+        <div class="pickup-body">
+          <div class="pick NO.1">
+            <a href="#">NO.1</a>
+            <p></p>
+          </div>
+          <div class="pick NO.2">
+            <a href="#">NO.2</a>
+            <p></p>
+          </div>
+          <div class="pick NO.3">
+            <a href="#">NO.3</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <!--投稿しよう-->
+      <div class="try">
+        <%= link_to("投稿しよう", "/write") %>
+      </div>
+
+  </main>
+</body>

@@ -1,0 +1,19 @@
+<div class="main posts-new">
+  <div class="container">
+    <h1 class="form-heading">新規投稿</h1>
+    <%= form_tag("/posts/create") do %>
+    <div class="form">
+      <div class="title">
+        <p>タイトル</p>
+        <textarea class="title" name ="title"></textarea>
+      </div>
+      <div class="form-body">
+        <p>本文</p>
+        <textarea name ="content"></textarea>
+        <input type="submit" value="一時保存">
+        <input type="submit" value="投稿">
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
