@@ -13,3 +13,82 @@
  *= require_tree .
  *= require_self
  */
+
+
+ /* ヘッダー ================================ */
+
+ header {
+   height: 160px;
+ }
+
+ .header-title {
+   background-color: #e0efff;
+   height: 110px;
+ }
+
+ .header-logo a {
+   float: left;
+   font-size: 30px;
+   display: inline-block;
+   margin-top: 30px;
+   margin-left: 30px;
+ }
+
+ .header-login {
+   float: right;
+   font-size: 15px;
+   padding: 50px;
+ }
+
+ .header-login a {
+   background-color: #93c9ff;
+   border: 1px solid #93c9ff;
+   border-radius: 4px;
+   color: white;
+   padding: 3px 10px;
+ }
+
+ .header-list {
+   background-color: #93c9ff;
+   height: 50px;
+ }
+
+ .header-list a {
+   background-color: #93c9ff;
+   border: 1px solid white;
+   color: white;
+   border-radius: 4px;
+   display: inline-block;
+   margin: 10px 20px;
+   padding: 0px 10px;
+   width:80px;
+   text-align: center;
+ }
+
+ .header-list li {
+   float: left;
+ }
+ 
+ /* フッター　================================ */
+ footer{
+   height: 80px;
+   background-color: #9eceff;
+   text-align: center;
+ }
+
+ .footer-logo{
+   font-size: 20px;
+   padding-top: 15px;
+ }
+
+ .footer-list {
+   width:550px;
+   margin: auto;
+ }
+
+ .footer-list a {
+   color: white;
+   font-size: 12px;
+   margin: 0px 10px;
+   padding: 0px 5px;
+ }
