@@ -2,11 +2,14 @@
 <div class="main posts-index">
   <div class="container">
     <% @posts.each do |post| %>
-      <div class="posts-index-item">
+      <div class="posts-index-title">
+        <%= link_to(post.title,"/posts/#{post.id}")%>
+      </div>
+      <div class="posts-index-content">
         <%= link_to(post.content,"/posts/#{post.id}")%>
-        <div class="posts-user-name">
-          <%= link_to(post.user.name, "/users/#{post.user.id}") %>
-        </div>
+      </div>
+      <div class="posts-user-name">
+        <%= link_to(post.user.name, "/users/#{post.user.id}") %>
       </div>
     <% end %>
   </div>
