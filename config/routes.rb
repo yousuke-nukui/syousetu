@@ -16,6 +16,14 @@ Rails.application.routes.draw do
 
   get "posts/index" => "posts#index"
   get 'posts/search' => 'posts#search'
+  get 'posts/love' => 'posts#love'
+  get 'posts/society' => 'posts#society'
+  get 'posts/mystery' => 'posts#mystery'
+  get 'posts/fantasy' => 'posts#fantasy'
+  get 'posts/novel' => 'posts#novel'
+  get 'posts/history' => 'posts#history'
+  get 'posts/gosip' => 'posts#gosip'
+  get 'posts/others' => 'posts#others'
   get "posts/new" => "posts#new"
   get "posts/:id" => "posts#show"
   post "posts/create" => "posts#create"
@@ -24,6 +32,8 @@ Rails.application.routes.draw do
   post "posts/:id/destroy" => "posts#destroy"
   get "posts/:id/overwrite" => "posts#overwrite"
   post "posts/:id/create" => "posts#create"
+
+
 
   get '/' => 'home#top'
   get 'howto' => 'home#howto'
