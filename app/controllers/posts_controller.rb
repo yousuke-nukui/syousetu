@@ -18,6 +18,7 @@ class PostsController < ApplicationController
   def create
     @post=Post.new(
       title:params[:title],
+      category:params[:category],
       content:params[:content],
       user_id:@current_user.id
     )
@@ -32,6 +33,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.find_by(id: params[:id])
     @post.title = params[:title]
+    @post.category = paarams[:category]
     @post.content = params[:content]
     @post.save
     redirect_to("/posts/index")

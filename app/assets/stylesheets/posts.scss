@@ -3,12 +3,19 @@
 }
 
 /* posts/index ================================ */
-.posts-index-item {
+.posts-main posts-index{
+
+}
+
+.work {
+  width: 70%;
+  margin: auto;
   padding: 20px 30px;
   background-color: white;
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
 }
+
 
 .post-left img {
   width: 50px;
@@ -18,7 +25,7 @@
   object-fit: cover;
 }
 
-.post-user-name a {
+.posts-index-content a {
   font-weight: 600;
 }
 

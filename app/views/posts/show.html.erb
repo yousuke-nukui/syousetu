@@ -5,6 +5,7 @@
         <%= link_to(@user.name, "/users/#{@user.id}") %>
       </div>
       <p><%= @post.title %></p>
+      <p><%= @post.category %></p>
       <p><%= @post.content %></p>
       <div class="post-time">
         <%= @post.created_at %>
