@@ -2,10 +2,28 @@
   <div class="container">
     <h1 class="form-heading">編集</h1>
     <%= form_tag("/posts/#{@post.id}/create") do %>
+
     <div class="form">
+      <div class="title">
+        <p>タイトル</p>
+        <textarea class="title" name ="title"><%=@post.title %></textarea>
+      </div>
+      <div class="categories">
+      <p>カテゴリー</p>
+      <input type="radio" name="category" value="恋愛">恋愛
+      <input type="radio" name="category" value="社会・現代">社会・現代
+      <input type="radio" name="category" value="ミステリー">ミステリー
+      <input type="radio" name="category" value="ファンタジー">ファンタジー
+      <input type="radio" name="category" value="文芸">文芸
+      <input type="radio" name="category" value="歴史・時代">歴史・時代
+      <input type="radio" name="category" value="ゴシップ">ゴシップ
+      <input type="radio" name="category" value="その他">その他
+    </div>
       <div class="form-body">
-        <textarea name="content"><%=@post.content %></textarea>
-        <input type="submit" value="保存">
+        <p>本文</p>
+        <textarea name ="content"><%=@post.content %></textarea>
+        <input type="submit" value="一時保存">
+        <input type="submit" value="投稿">
       </div>
     </div>
     <% end %>

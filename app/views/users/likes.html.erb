@@ -14,18 +14,18 @@
     </ul>
 
     <% @likes.each do |like| %>
-
       <% post = Post.find_by(id: like.post_id) %>
-
-      <div class="posts-index-item">
-        <div class="post-right">
-          <div class="post-user-name">
-            <%= link_to(post.user.name, "/users/#{post.user.id}") %>
-          </div>
-          <%= link_to(post.content, "/posts/#{post.id}") %>
+      <div class="work">
+        <div class="posts-index-title">
+          <%= link_to(post.title,"/posts/#{post.id}")%>
+        </div>
+        <div class="posts-index-category  ">
+          <%= link_to(post.category,"/posts/#{post.id}")%>
+        </div>
+        <div class="posts-index-content">
+          <%= link_to(post.content,"/posts/#{post.id}")%>
         </div>
       </div>
-
     <% end %>
   </div>
 </div>

@@ -61,12 +61,14 @@
       </div>
       <% end %>
     </header>
+
     <% if flash[:notice] %>
       <div class="flash">
         <%= flash[:notice] %>
       </div>
     <% end %>
     <%= yield %>
+
     <footer>
       <div class="footer-logo">Title</div>
       <div class="footer-list">
