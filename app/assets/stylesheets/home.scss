@@ -66,9 +66,11 @@ main{
 
 .genre-body{
   margin: auto;
-  border: 1px solid #7fbfff;
 }
 
+.genre-body li{
+  margin-right: 16%;
+}
 
 .pickup{
   width: 65%;
@@ -87,8 +89,8 @@ main{
 }
 
 .pickup-body{
+  display: inline-block;
   height: 170px;
-  float: left;
   padding: 0px 30px;
 }
 
