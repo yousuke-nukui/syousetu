@@ -21,6 +21,9 @@ main{
 
 
 /* home/top　================================ */
+.top-container{
+  width: 100%;
+}
 
 .intro{
   width: 30%;
@@ -41,12 +44,12 @@ main{
 }
 
 .genre {
-	width:160px;
-  height: 230px;
-	margin:30px 10px 10px 25px;
+	width:18%;
+  height: 260px;
+	margin-left:5%;
+  margin-top: 30px;
   border: 1px solid #7fbfff;
   border-radius: 10px;
-	display:inline;
 	float:left;
 }
 
@@ -62,21 +65,17 @@ main{
 }
 
 .genre-body{
-  text-align: center;
+  margin: auto;
+  border: 1px solid #7fbfff;
 }
 
-.genre li{
-  width: 90px;
-  margin-right: auto;
-  list-style: none;
-}
 
 .pickup{
-  width: 1000px;
+  width: 65%;
   height: 230px;
   float: right;
   margin-top: 30px;
-  margin-right: 40px;
+  margin-right: 7%;
   border: 1px solid #7fbfff;
   border-radius: 15px;
 }
@@ -94,8 +93,8 @@ main{
 }
 
 .pick{
+  width: 80%;
   float: left;
-  width: 250px;
   background-color: #e0efff;
   padding: 10px;
   height: 100px;
