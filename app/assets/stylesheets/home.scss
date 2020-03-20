@@ -131,29 +131,40 @@ main{
 .howtosentence {
   border: 1px solid #7fbfff;
   border-radius: 20px;
-  margin: 100px 100px;
+  margin: 10% 10%;
 }
 
-.read {
+.howto-read {
   height: 100px;
   width: 100%;
   display: block;
+  margin: 10px 0;
 }
 
-.write {
+.howto-write {
   height: 100px;
   width: 100%;
   display: block;
+  margin: 10px 0;
 }
 
-.btn {
+.btnread {
   border: 1px solid #7fbfff;
   border-radius: 10px;
   line-height: 30px;
   padding: 5px 20px;
-  width: 100px;
+  width: 10%;
   height: 30px;
   margin: auto;
+}
+
+.btnwrite {
+  border: 1px solid #7fbfff;
+  border-radius: 10px;
+  line-height: 30px;
+  padding: 5px 20px;
+  width: 10%;
+  height: 30px;
 }
 
 /* 新規作成　================================
@@ -197,17 +208,16 @@ main{
 /* home/write　================================ */
 
 .btn-wrapper {
-  height: 10%;
-  padding-top: 20px;
+  height: 15%;
+  padding: 20px ;
 }
 
 .btn-wrapper a {
   border: 1px solid #7fbfff;
   border-radius: 10px;
-  padding: 5px 20px;
+  padding: 5px 15px;
   font-size: 20px;
-  display: inline-block;
-  width: 100px;
+  width: 10%;
 }
 
 .text-wrapper {

@@ -68,7 +68,7 @@
 
 /* posts/search　================================ */
 .search-category{
-  width: 800px;
+  width: 35%;
   height: 210px;
   margin: auto;
   border: 2px solid #87cefa;
@@ -86,22 +86,24 @@
 }
 
 .search-category-body{
-  width: 800px;
   height: 140px;
   margin: auto;
 }
 .search-category-body ul{
-  width: 800px;
+  width: 60%;
   list-style: none outside;
+  margin: auto;
 }
 .search-category-body li{
   float: left;
-  width: 400px;
+  width: 50%;
   font-size: 20px;
+  border: 2px solid #87cefa;
 }
 
+
 .search-pickup{
-  width: 1000px;
+  width: 70%;
   height: 550px;
   margin: auto;
   border: 2px solid #87cefa;
@@ -109,19 +111,20 @@
 
 .search-pickup-header{
   height: 50px;
+  margin: auto;
   line-height: 50px;
   font-size: 25px;
-  line-height: 50px;
   margin-top: 5px;
+  border: 2px solid #87cefa;
 }
 
 .search-pickup-body{
-  width: 1000px;
   margin: auto;
+  border: 2px solid #87cefa;
 }
 .NO1{
   text-align: left;
-  width: 700px;
+  width: 70%;
   height: 100px;
   background-color: white;
   padding: 10px;
@@ -131,7 +134,7 @@
 }
 .NO2{
   text-align: left;
-  width: 700px;
+  width: 70%;
   height: 100px;
   background-color: white;
   padding: 10px;
@@ -142,7 +145,7 @@
 
 .NO3{
   text-align: left;
-  width: 700px;
+  width: 70%;
   height: 100px;
   background-color: white;
   padding: 10px;
