@@ -6,11 +6,13 @@
       <div class="posts-index-title">
         <%= link_to(post.title,"/posts/#{post.id}")%>
       </div>
-      <div class="posts-index-category  ">
-        <%= link_to(post.category,"/posts/#{post.id}")%>
-      </div>
       <div class="posts-index-content">
         <%= link_to(post.content,"/posts/#{post.id}")%>
+      </div>
+      <div class="posts-index-details">
+        <p>カテゴリー：<%= link_to(post.category,"/posts/#{post.id}")%></p>
+        <p>文字数：</p>
+        <p>更新日：<%= link_to(post.created_at,"/posts/#{post.id}")%></p>
       </div>
     </div>
     <% end %>
