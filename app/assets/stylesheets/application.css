@@ -14,9 +14,7 @@
  *= require_self
  */
 
- *{
-   box-sizing:border-box;
- }
+
 
  /* ヘッダー ================================ */
 .nakami{
@@ -75,7 +73,7 @@
    display: inline-block;
    margin: 10px 20px;
    padding: 0px 10px;
-   width:80%;
+   width:80px;
    text-align: center;
  }
 

@@ -15,7 +15,9 @@
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
 }
-
+.posts-index-title{
+  font-size: 25px;
+}
 
 .post-left img {
   width: 50px;
@@ -29,6 +31,11 @@
   font-weight: 600;
 }
 
+.posts-index-details p{
+  display: inline-block;
+  margin-left: 10px;
+  padding-right: 15px;
+}
 .post-user-name a:hover {
   color: #3ecdc6;
 }
@@ -43,6 +50,10 @@
   width: 90%;
   padding-left: 25px;
   text-align: left;
+}
+
+.posts-index-details{
+  background-color: gray;
 }
 
 /* posts/new ================================ */
