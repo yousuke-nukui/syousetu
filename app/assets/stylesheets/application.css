@@ -44,7 +44,9 @@
  .header-login {
    float: right;
    font-size: 15px;
-   padding: 50px;
+   margin-right: 35px;
+   margin-top: 35px;
+
  }
 
  .header-login a {
@@ -71,7 +73,7 @@
    color: white;
    border-radius: 4px;
    display: inline-block;
-   margin: 10px 20px;
+   margin: 10px 15px;
    padding: 0px 10px;
    width:80px;
    text-align: center;
