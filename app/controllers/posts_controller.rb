@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   def index
      @posts = Post.all.order(created_at: :desc)
+     @posts = Post.all.page(params[:page]).per(5)
   end
 
   def show
