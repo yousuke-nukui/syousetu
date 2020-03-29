@@ -25,7 +25,7 @@ main{
 }
 
 .intro{
-  width: 30%;
+  width: 40%;
   height: 150px;
   margin: auto;
   margin-top: 40px;
@@ -44,7 +44,7 @@ main{
 
 .genre {
 	width:18%;
-  height: 240px;
+  height: 250px;
 	margin-left:5%;
   margin-top: 30px;
   border: 1px solid #7fbfff;
@@ -74,8 +74,8 @@ main{
 
 .pickup{
   width: 65%;
-  height: 240px;
-  float: right;
+  height: 250px;
+  margin-left: 28%;
   margin-top: 30px;
   margin-right: 7%;
   border: 1px solid #7fbfff;
@@ -86,19 +86,18 @@ main{
   height: 35px;
   text-align: center;
   font-size: 18px;
+  margin-top: 5px;
+}
+.pickup-header p{
+  margin: auto;
+  line-height: 35px;
 }
 
 .pickup-body{
-
   width: 100%;
   display: inline-block;
   height: 205px;
   padding: 0px 30px;
-}
-
-.pickup-header p{
-  margin: auto;
-  line-height: 35px;
 }
 
 .pick{
@@ -106,10 +105,11 @@ main{
   float: left;
   background-color: #e0efff;
   padding: 10px;
-  height: 180px;
+  height: 170px;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 5px;
+  margin-bottom: 5px;
   border: 1px solid #c6e2ff;
   border-radius: 5px;
 }
@@ -118,19 +118,19 @@ main{
 }
 
 .try {
-  float: left;
   width: 100%;
-  height: 80px;
-  padding-top: 50px;
+  height: 60px;
   text-align: center;
+  margin-top:20px;
+  margin-bottom: 20px;
 }
 
 .try a{
   font-size: 20px;
+  line-height: 60px;
+  padding: 5px;
   border: 1px solid #7fbfff;
   border-radius: 10px;
-  padding: 10px 30px;
-  margin-top: 80px;
 }
 
 /* home/howto　================================ */
@@ -221,6 +221,7 @@ main{
 .btn-wrapper {
   height: 15%;
   padding: 20px ;
+  margin-top: 20px;
 }
 
 .btn-wrapper a {
