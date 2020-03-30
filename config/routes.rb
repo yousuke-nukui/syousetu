@@ -39,5 +39,8 @@ Rails.application.routes.draw do
   get 'howto' => 'home#howto'
   get 'new' => 'home#new'
   get 'write' => 'home#write'
+  get 'agreement' => 'home#agreement'
+  get 'privacypolicy' => 'home#privacypolicy'
+  get 'contact' => 'home#contact'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

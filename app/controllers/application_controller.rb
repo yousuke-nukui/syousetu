@@ -16,8 +16,10 @@ class ApplicationController < ActionController::Base
     if @current_user
       flash[:notice] = "すでにログインしています"
       redirect_to("/users/#{@current_user.id}")
-
     end
-
+  end
+  def agreement
+  end
+  def privacypolicy
   end
 end
