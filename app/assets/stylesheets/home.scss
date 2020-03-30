@@ -10,14 +10,10 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
-}
 
 main{
   text-align: center;
 }
-
 
 /* home/top　================================ */
 .top-container{
@@ -241,4 +237,14 @@ main{
   border-radius: 20px;
   width: 70%;
   margin: auto;
+}
+
+/* agreement　================================ */
+.agreement-container{
+  width: 70%;
+  margin: auto;
+}
+
+.agreement-container h1{
+  text-align: center;
 }
