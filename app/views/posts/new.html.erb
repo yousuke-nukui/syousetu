@@ -8,9 +8,11 @@
           <%= message %>
         </div>
       <% end %>
-      <div class="title">
+      <div class="title-header">
         <p>タイトル</p>
-        <textarea name ="titlebox" rows="1"><%= @post.title %></textarea>
+      </div>
+      <div class="title">
+        <textarea name ="titlebox" class="titlebox"><%= @post.title %></textarea>
       </div>
       <div class="categories">
       <p>カテゴリー</p>
@@ -28,7 +30,7 @@
         <textarea name ="content" rows="20"><%= @post.content %></textarea>
       </div>
       <div class="submit">
-        <input type="submit" value="一時保存">
+        <input type="submit" value="一時保存" name="submit1">
         <input type="submit" value="投稿">
       </div>
     </div>
