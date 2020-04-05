@@ -2,10 +2,8 @@ ja:
  activerecord:
  models:
  attributes:
-   review:
-     post:
-       content:本文
-       Category:カテゴリ 
  user:
+   content:本文
+   Category:カテゴリ
  name: 名前
  email: メールアドレス

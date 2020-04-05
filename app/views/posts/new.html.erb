@@ -10,7 +10,7 @@
       <% end %>
       <div class="title">
         <p>タイトル</p>
-        <textarea class="title" name ="title" ><%= @post.title %></textarea>
+        <textarea name ="titlebox" rows="1"><%= @post.title %></textarea>
       </div>
       <div class="categories">
       <p>カテゴリー</p>
@@ -22,10 +22,12 @@
       <input type="radio" name="category" value="歴史・時代">歴史・時代
       <input type="radio" name="category" value="ゴシップ">ゴシップ
       <input type="radio" name="category" value="その他">その他
-    </div>
+     </div>
       <div class="form-body">
         <p>本文</p>
-        <textarea name ="content"><%= @post.content %></textarea>
+        <textarea name ="content" rows="20"><%= @post.content %></textarea>
+      </div>
+      <div class="submit">
         <input type="submit" value="一時保存">
         <input type="submit" value="投稿">
       </div>
