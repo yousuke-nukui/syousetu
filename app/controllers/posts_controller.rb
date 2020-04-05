@@ -23,8 +23,13 @@ class PostsController < ApplicationController
       content:params[:content],
       user_id:@current_user.id
     )
-    @post.save
-    redirect_to("/posts/index")
+    if @post.save
+      flash[:notice] = "投稿しました"
+      redirect_to("/posts/index")
+    else
+      render("posts/new")
+    end
+
   end
 
   def edit
@@ -36,8 +41,12 @@ class PostsController < ApplicationController
     @post.title = params[:title]
     @post.category = paarams[:category]
     @post.content = params[:content]
-    @post.save
-    redirect_to("/posts/index")
+
+    if @post.save
+      redirect_to("/posts/index")
+    else
+      render("posts/edit")
+    end
   end
 
   def destroy
