@@ -68,12 +68,17 @@
 
 .form{
 }
-.posts-new textarea{
-
+.posts-new textarea {
+  width: 80%;
+  font-size: 20px;
+  padding: 10px;
+  height: 20px;
+  border: 1px solid rgb(216, 218, 223);
+  resize: none;
 
 }
 
-.posts-new textarea-titlebox{
+textarea-titlebox{
   width: 80%;
   font-size: 20px;
   padding: 10px;
@@ -114,6 +119,7 @@
   height: 210px;
   margin: auto;
   border: 2px solid #87cefa;
+  border-radius: 15px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -150,6 +156,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   border: 2px solid #87cefa;
+  border-radius: 15px;
 }
 
 .search-pickup-header{
