@@ -1,6 +1,6 @@
 <div class="main user-show">
   <div class="container">
-    <div class="user">
+    <div class="userdetails">
       <!-- img src="%= "/user_images/#{@user.image_name}" %>"> -->
       <h2><%= @user.name %></h2>
       <p><%= @user.email %></p>
@@ -27,6 +27,6 @@
       </div>
     </div>
     <% end %>
-    <%= paginate @users %>
+    <%= paginate @posts %>
   </div>
 </div>

@@ -2,8 +2,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user, {only: [:new, :show, :create, :edit, :update, :destroy, :overwrite]}
 
   def index
-     @posts = Post.all.order(created_at: :desc)
-     @posts = Post.all.page(params[:page]).per(5)
+    @posts = Post.all.order(created_at: :desc).page(params[:page]).per(5)
   end
 
   def show

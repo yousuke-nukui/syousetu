@@ -1,9 +1,8 @@
 ja:
- activerecord:
- models:
- attributes:
- user:
-   content:本文
-   Category:カテゴリ
- name: 名前
- email: メールアドレス
+  views:
+    pagination:
+      first: "&laquo; 最初"
+      last: "最後 &raquo;"
+      previous: "&lsaquo; 前"
+      next: "次 &rsaquo;"
+      truncate: "..."

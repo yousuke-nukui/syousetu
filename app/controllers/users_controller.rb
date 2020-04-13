@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   end
   def id
     @user = User.find_by(id: params[:id])
-    @users = User.page(params[:page]).per(5)
+    @posts = User.all.order(created_at: :desc).page(params[:page]).per(5)
   end
   def new
     @user = User.new

@@ -14,9 +14,7 @@
  *= require_self
  */
 
-a{
-  color: black;
-}
+
 
  /* ヘッダー ================================ */
 .nakami{
@@ -108,3 +106,10 @@ a{
    margin: 0px 10px;
    padding: 0px 5px;
  }
+
+.pagination{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  list-style: none;
+}
